@@ -101,4 +101,4 @@ bsp:
 - Links: ...
 
 -------------
-MMS Data Access - Dominik Schimmer - 26.02.2020
+Dominik Schimmer - 26.02.2020
