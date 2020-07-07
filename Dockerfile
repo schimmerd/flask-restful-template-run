@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 # webserver, with 10 workers process.
 # For environments with multiple CPU cores, increase the number of workers
 # to be equal to the cores available.
-CMD exec gunicorn --bind :$PORT --workers 10 app:app
+CMD exec gunicorn --bind :$PORT --workers 10 --timeout 900 app:app

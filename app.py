@@ -14,10 +14,10 @@ CORS(app)
 
 # Create Logger:
 logger = CloudRunLogger(project_id=config.PROJECT_ID,
-                        local_run=True) # Todo Change in 'cloud' mode
+                        local_run=config.LOCAL_RUN)
 
 
-api.add_resource(ExampleClass, "/v1/apis/example", resource_class_args=(logger,))
+api.add_resource(ExampleClass, "/api/v1/example", resource_class_args=(logger,))
 
 
 if __name__ == '__main__':
